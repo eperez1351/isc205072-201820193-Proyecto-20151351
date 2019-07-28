@@ -5,6 +5,11 @@
 void getHostname_terminal(char *hostname);
 char* sendCommandTest();
 
+/*
+void procesador_implementado (char * buffer){
+//Aqui hago lo que tenga que hacer con el buffer
+}
+*/
 int main()
 {
     char **ipport;
@@ -21,6 +26,7 @@ int main()
     scanf("%s", hostname);
     printf("%s\n", *(ipport+1));
     telnet_client(3, ipport, sendCommandTest());
+    //int telnet_client(int argc, char **argv, char* command, procesador_implementado)
     return 0;
 
 
