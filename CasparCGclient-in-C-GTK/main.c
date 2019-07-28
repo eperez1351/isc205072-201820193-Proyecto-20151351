@@ -4,6 +4,7 @@
 
 void getHostname_terminal(char *hostname);
 char* sendCommandTest();
+
 int main()
 {
     char **ipport;
