@@ -34,7 +34,7 @@
 #include "libtelnet.h"
 #include "telnet-client.h"
 
-int telnet_client(int argc, char **argv/*, int (*mifuncion_lectura(char *)*/);
+int telnet_client(int argc, char **argv, char* command);
 
 static struct termios orig_tios;
 static telnet_t *telnet;
@@ -146,8 +146,8 @@ static void _event_handler(telnet_t *telnet, telnet_event_t *ev,
 	}
 }
 
-int telnet_client(int argc, char **argv/*, int (*mifuncion_lectura(char *)*/) { // definir funciones de lectura y escritura con variables puntero caracter
-	char buffer[512];//
+int telnet_client(int argc, char **argv, char* command) { //*, int (*mifuncion_lectura(char *), char *buffer*// definir funciones de lectura y escritura con variables puntero caracter
+	char buffer[512];
 	int rs;
 	int sock;
 	struct sockaddr_in addr;
@@ -157,6 +157,7 @@ int telnet_client(int argc, char **argv/*, int (*mifuncion_lectura(char *)*/) { 
 	struct termios tios;
 	const char *servname;
 	const char *hostname;
+	buffer = *command;
 
 	/* check usage */
 	if (argc < 2) {
@@ -229,7 +230,7 @@ int telnet_client(int argc, char **argv/*, int (*mifuncion_lectura(char *)*/) { 
 	while (poll(pfd, 2, -1) != -1) {
 		/* read from stdin */
 		if (pfd[0].revents & POLLIN) {
-			if ((rs = /*punto donde se introduce la funcion */read(STDIN_FILENO, buffer, sizeof(buffer))) > 0) {
+			if ((rs = read(STDIN_FILENO, buffer, sizeof(buffer))) > 0) {
 				_input(buffer, rs);
 			} else if (rs == 0) {
 				break;
