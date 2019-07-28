@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1562093108 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/libtelnet.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+	<stdarg.h>
+	<zlib.h>
+	"libtelnet.h"
+
+1562093108 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/libtelnet.h
+	<stdarg.h>
+	<stddef.h>
+
+1563482788 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/gtkInterface.c
+
+1564277034 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/main.c
+	<stdio.h>
+	<stdlib.h>
+	"telnet-client.h"
+
+1563917337 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/telnet-client.h
+
+1563483529 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/telnet-client.c
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<poll.h>
+	<errno.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<termios.h>
+	<unistd.h>
+	"zlib.h"
+	"libtelnet.h"
+
+1563909120 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/telnet-client.c
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<poll.h>
+	<errno.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<termios.h>
+	<unistd.h>
+	"zlib.h"
+	"libtelnet.h"
+	"telnet-client.h"
+
