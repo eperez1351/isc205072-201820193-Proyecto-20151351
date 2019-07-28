@@ -147,6 +147,7 @@ static void _event_handler(telnet_t *telnet, telnet_event_t *ev,
 }
 
 int telnet_client(int argc, char **argv, char* command) { //*, int (*mifuncion_lectura(char *), char *buffer*// definir funciones de lectura y escritura con variables puntero caracter
+	// int telnet_client(int argc, char **argv, char* command, void (*procesador)(char *))
 	char buffer[512];
 	int rs;
 	int sock;
@@ -231,6 +232,7 @@ int telnet_client(int argc, char **argv, char* command) { //*, int (*mifuncion_l
 		/* read from stdin */
 		if (pfd[0].revents & POLLIN) {
 			if ((rs = read(STDIN_FILENO, buffer, sizeof(buffer))) > 0) {
+				//procesador(buffer);
 				_input(buffer, rs);
 			} else if (rs == 0) {
 				break;
