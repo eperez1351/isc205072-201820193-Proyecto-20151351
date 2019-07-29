@@ -39,7 +39,7 @@ int procesador_implementado (char * buffer)
     int option=0;
     do
     {
-        printf("Select command\r\n1 - play \r\n2 - stop \r\n5 - exit \r\n");
+        printf("Select command\r\n1 - play \r\n2 - stop \r\n10 - exit \r\n");
         scanf("%d", &option);
         //strcpy(buffer, "play 1-1 amb\r\n");
         switch (option)
@@ -47,23 +47,33 @@ int procesador_implementado (char * buffer)
         case 1:
             {
                 strcpy(buffer, "play 1-1 amb\r\n");
-                printf("sent play command\n");
+                printf("sent play command\r\n");
                 return strlen(buffer);
             }
-        //case 2:
-         //   {
+        case 2:
+            {
+                strcpy(buffer, "stop 1-1\r\n");
+                printf("sent stop command\r\n");
+                return strlen(buffer);
+            }
+        case 3:
+            {
 
-         //   }
-        case 5:
+            }
+        case 10:
             {
                 strcpy(buffer, "bye\r\n");
                 return strlen(buffer);
             }
         }
     }
-    while (option >= 5);
+    while (option >= 10);
     option =0;
     return 0;
 }
+/*
+char* readCommandsFromFile(char * filename)
+{
 
-//void copyCharByChar(char *string1, char *string2)
+}
+*/
