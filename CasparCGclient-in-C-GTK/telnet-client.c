@@ -34,7 +34,7 @@
 #include "libtelnet.h"
 #include "telnet-client.h"
 
-int telnet_client(int argc, char **argv, char* command);
+int telnet_client(int argc, char **argv, void (*procesador)(char *));
 
 static struct termios orig_tios;
 static telnet_t *telnet;
@@ -146,7 +146,8 @@ static void _event_handler(telnet_t *telnet, telnet_event_t *ev,
 	}
 }
 
-int telnet_client(int argc, char **argv, char* command) { //*, int (*mifuncion_lectura(char *), char *buffer*// definir funciones de lectura y escritura con variables puntero caracter
+int telnet_client(int argc, char **argv, void (*procesador)(char *)) {
+    // definir funciones de lectura y escritura con variables puntero caracter
 	// int telnet_client(int argc, char **argv, char* command, void (*procesador)(char *))
 	char buffer[512];
 	int rs;
@@ -158,7 +159,6 @@ int telnet_client(int argc, char **argv, char* command) { //*, int (*mifuncion_l
 	struct termios tios;
 	const char *servname;
 	const char *hostname;
-	buffer = *command;
 
 	/* check usage */
 	if (argc < 2) {
