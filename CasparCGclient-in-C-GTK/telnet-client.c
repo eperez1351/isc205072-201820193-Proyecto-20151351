@@ -34,7 +34,7 @@
 #include "libtelnet.h"
 #include "telnet-client.h"
 
-int telnet_client(int argc, char **argv, void (*procesador)(char *));
+int telnet_client(int argc, char **argv, int (*procesador)(char *));
 
 static struct termios orig_tios;
 static telnet_t *telnet;
@@ -146,7 +146,7 @@ static void _event_handler(telnet_t *telnet, telnet_event_t *ev,
 	}
 }
 
-int telnet_client(int argc, char **argv, void (*procesador)(char *)) {
+int telnet_client(int argc, char **argv, int (*procesador)(char *)) {
     // definir funciones de lectura y escritura con variables puntero caracter
 	// int telnet_client(int argc, char **argv, char* command, void (*procesador)(char *))
 	char buffer[512];
@@ -228,11 +228,16 @@ int telnet_client(int argc, char **argv, void (*procesador)(char *)) {
 	pfd[1].events = POLLIN;
 
 	/* loop while both connections are open */
+
+
+
 	while (poll(pfd, 2, -1) != -1) {
 		/* read from stdin */
+
 		if (pfd[0].revents & POLLIN) {
+
 			if ((rs = read(STDIN_FILENO, buffer, sizeof(buffer))) > 0) {
-				//procesador(buffer);
+                rs = procesador(buffer);
 				_input(buffer, rs);
 			} else if (rs == 0) {
 				break;

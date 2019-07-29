@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="CasparCGclient-in-C-GTK" />
+		<Option title="gtkgui" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/CasparCGclient-in-C-GTK" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/gtkgui" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,9 +16,9 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/CasparCGclient-in-C-GTK" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/gtkgui" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -29,21 +29,16 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="libtelnet.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="libtelnet.h" />
+		<Linker>
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+		</Linker>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="telnet-client.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="telnet-client.h" />
 		<Extensions>
-			<envvars />
 			<code_completion />
 			<debugger />
 		</Extensions>

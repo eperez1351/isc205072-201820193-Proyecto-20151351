@@ -4,7 +4,7 @@
 #include <string.h>
 
 void getHostname_terminal(char *hostname);
-void procesador_implementado (char * buffer);
+int procesador_implementado (char * buffer);
 
 /*
 void procesador_implementado (char * buffer){
@@ -25,7 +25,7 @@ int main()
     printf("->");
     scanf("%s", hostname);
     printf("%s\n", *(ipport+1));
-    //telnet_client(3, ipport);
+    telnet_client(3, ipport, procesador_implementado);
     //telnet_client(int argc, char **argv, procesador_implementado)
     return 0;
 
@@ -33,12 +33,13 @@ int main()
 }
 
 
-void procesador_implementado (char * buffer)
+int procesador_implementado (char * buffer)
 {
+    system("clear");
     int option=0;
     do
     {
-        printf("Select command\n1 - play \n2 - stop \n5 - exit \n");
+        printf("Select command\r\n1 - play \r\n2 - stop \r\n5 - exit \r\n");
         scanf("%d", &option);
         //strcpy(buffer, "play 1-1 amb\r\n");
         switch (option)
@@ -46,15 +47,23 @@ void procesador_implementado (char * buffer)
         case 1:
             {
                 strcpy(buffer, "play 1-1 amb\r\n");
+                printf("sent play command\n");
+                return strlen(buffer);
             }
         //case 2:
          //   {
 
          //   }
+        case 5:
+            {
+                strcpy(buffer, "bye\r\n");
+                return strlen(buffer);
+            }
         }
     }
-    while (option != 5);
-    return;
+    while (option >= 5);
+    option =0;
+    return 0;
 }
 
 //void copyCharByChar(char *string1, char *string2)
