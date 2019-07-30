@@ -24,7 +24,7 @@
 	<stdlib.h>
 	"telnet-client.h"
 
-1564364215 ient.h"
+1564410783 ient.h"
 
 1563917337 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/CasparCGclient-in-C-GTK/telnet-client.h
 
@@ -74,75 +74,6 @@
 	<stdarg.h>
 	<zlib.h>
 	"libtelnet.h"
-
-1562093108 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/libtelnet.h
-	<stdarg.h>
-	<stddef.h>
-
-1564364215 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.c
-	<sys/types.h>
-	<sys/socket.h>
-	<netinet/in.h>
-	<arpa/inet.h>
-	<netdb.h>
-	<poll.h>
-	<errno.h>
-	<stdio.h>
-	<string.h>
-	<stdlib.h>
-	<ctype.h>
-	<termios.h>
-	<unistd.h>
-	"zlib.h"
-	"libtelnet.h"
-	"telnet-client.h"
-
-1564364216 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.h
-
-1564363979 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
-	<stdio.h>
-	<stdlib.h>
-	"telnet-client.h"
-
-1563482788 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\gtkinterface.c
-
-1562093108 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\libtelnet.c
-	<stdlib.h>
-	<string.h>
-	<stdio.h>
-	<errno.h>
-	<string.h>
-	<stdarg.h>
-	<zlib.h>
-	"libtelnet.h"
-
-1562093108 c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\libtelnet.h
-	<stdarg.h>
-	<stddef.h>
-
-1564364215 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\telnet-client.c
-	<sys/types.h>
-	<sys/socket.h>
-	<netinet/in.h>
-	<arpa/inet.h>
-	<netdb.h>
-	<poll.h>
-	<errno.h>
-	<stdio.h>
-	<string.h>
-	<stdlib.h>
-	<ctype.h>
-	<termios.h>
-	<unistd.h>
-	"zlib.h"
-	"libtelnet.h"
-	"telnet-client.h"
-
-1564364216 c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\telnet-client.h
-
-1563482788 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/gtkInterface.c
-
-1562093108 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/libtelnet.c
 	<stdlib.h>
 	<string.h>
 	<stdio.h>
@@ -155,14 +86,8 @@
 1562093108 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/libtelnet.h
 	<stdarg.h>
 	<stddef.h>
-
-1564414602 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
-	<stdio.h>
-	<stdlib.h>
-	"telnet-client.h"
-	<string.h>
-
-1564410690 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.h
+	<stdarg.h>
+	<stddef.h>
 
 1564410783 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.c
 	<sys/types.h>
@@ -181,4 +106,107 @@
 	"zlib.h"
 	"libtelnet.h"
 	"telnet-client.h"
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<poll.h>
+	<errno.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<termios.h>
+	<unistd.h>
+	"zlib.h"
+	"libtelnet.h"
+	"telnet-client.h"
+
+1564410690 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.h
+
+1564414602 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
+	<stdio.h>
+	<stdlib.h>
+	"telnet-client.h"
+	<stdio.h>
+	<stdlib.h>
+	"telnet-client.h"
+	<string.h>
+
+1563482788 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\gtkinterface.c
+
+1562093108 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\libtelnet.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+	<stdarg.h>
+	<zlib.h>
+	"libtelnet.h"
+
+1562093108 c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\libtelnet.h
+	<stdarg.h>
+	<stddef.h>
+
+1564410783 source:c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\telnet-client.c
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<poll.h>
+	<errno.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<termios.h>
+	<unistd.h>
+	"zlib.h"
+	"libtelnet.h"
+	"telnet-client.h"
+
+1564410690 c:\users\erid\documents\github\isc205072-201820193-proyecto-20151351\casparcgclient-in-c-gtk\telnet-client.h
+
+1562093108 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/libtelnet.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+	<stdarg.h>
+	<zlib.h>
+	"libtelnet.h"
+
+1562093108 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/libtelnet.h
+	<stdarg.h>
+	<stddef.h>
+
+1564410783 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.c
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<poll.h>
+	<errno.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<termios.h>
+	<unistd.h>
+	"zlib.h"
+	"libtelnet.h"
+	"telnet-client.h"
+
+1564410690 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.h
+
+1564525880 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
+	<stdio.h>
+	<stdlib.h>
+	"telnet-client.h"
+	<string.h>
 
