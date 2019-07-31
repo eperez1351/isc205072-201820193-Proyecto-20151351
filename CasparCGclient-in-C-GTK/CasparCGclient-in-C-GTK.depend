@@ -204,9 +204,16 @@
 
 1564410690 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/telnet-client.h
 
-1564525880 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
+1564585708 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/main.c
 	<stdio.h>
 	<stdlib.h>
 	"telnet-client.h"
 	<string.h>
+	"otherfunctions.h"
+
+1564582054 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.c
+	<stdio.h>
+	<stdlib.h>
+
+1564585752 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.h
 
