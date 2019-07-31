@@ -211,9 +211,10 @@
 	<string.h>
 	"otherfunctions.h"
 
-1564582054 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.c
+1564586008 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
-1564585752 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.h
+1564606133 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.h
 

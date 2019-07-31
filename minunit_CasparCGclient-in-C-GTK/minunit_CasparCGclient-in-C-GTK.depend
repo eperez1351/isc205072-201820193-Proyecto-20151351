@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1564586008 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1564606056 source:/media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/minunit_CasparCGclient-in-C-GTK/main.c
+	"../../minunit/minunit.h"
+	"../CasparCGclient-in-C-GTK/otherfunctions.h"
+
+1563599737 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/minunit/minunit.h
+	<Windows.h>
+	<unistd.h>
+	<time.h>
+	<sys/time.h>
+	<sys/resource.h>
+	<sys/times.h>
+	<string.h>
+	<mach/mach.h>
+	<mach/mach_time.h>
+	<stdio.h>
+	<math.h>
+
+1564586943 /media/erid/sf_C_DRIVE/Users/erid/Documents/GitHub/isc205072-201820193-Proyecto-20151351/CasparCGclient-in-C-GTK/otherfunctions.h
+
