@@ -79,7 +79,9 @@ char* setLogo(char *filename)
     return command;
 }
 
-char* readCommandsFromFile(char *filename)
+//las funciones anteriores se encargan de confeccionar los comandos a ser enviados, provisto de los argumentos necesarios
+
+char* readCommandsFromFile(char *filename)//lee comandos desde archivo y los devuelve como texto a un puntero de caracteres
 {
     int HowManyCommands;
     char *buffer;
@@ -109,7 +111,7 @@ char* readCommandsFromFile(char *filename)
     return buffer+1;
 }
 
-void writeCommandsToFile(char *filename)
+void writeCommandsToFile(char *filename)//crea el archivo de comandos y almacena los susodichos como estructuras
 {
     int option = 1;
     FILE *commandList;
@@ -143,9 +145,9 @@ void writeCommandsToFile(char *filename)
 }
 
 
-int procesador_implementado (char *buffer)
-{
-    system("clear");
+int procesador_implementado (char *buffer)//menu mediante el cual se controlan los comandos que se envian a traves de la sesion activa de la conexion telnet
+{                                       //el buffer aqui es el mismo que el de la sesion activa. se escribe en este buffer y se envia la longitud de lo escrito para enviar el comando
+    system("clear");//la funcion se llama en cada bucle de envio y recepcion de mensajes, esto limpia la pantalla para mas estetica
     char *tmpmedianame;
     char *layertmp;
     layertmp = (char*)malloc(50 * sizeof(char));
@@ -168,7 +170,7 @@ int procesador_implementado (char *buffer)
                 scanf("%s", tmpmedianame);
                 strcpy(buffer, playCommand(tmpmedianame));
                 printf("sent play command\r\n");
-                return strlen(buffer);
+                return strlen(buffer);//cada comando termina con esta instruccion, que devuelve la longitud de lo escrito en el buffer
             }
         case '2'://stop media on layer
             {
@@ -235,7 +237,7 @@ int procesador_implementado (char *buffer)
                 printf("sent play command (logo)\r\n");
                 return strlen(buffer);
             }
-        case 'e':
+        case 'e'://close session
             {
                 strcpy(buffer, "bye\r\n");
                 return strlen(buffer);

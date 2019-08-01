@@ -17,7 +17,7 @@ int main()
     char option;
     do
     {
-        printf("CasparCG client in C and libtelnet!\n1 - Enter hostname for Telnet connection\n");
+        printf("CasparCG client in C and libtelnet!\n1 - Enter hostname for Telnet connection\n");//menu principal
         printf("2 - Create file with preset commands\ne - Exit\n");
         printf("->");
         fflush(stdin);
@@ -27,16 +27,15 @@ int main()
             case '1':
             {
                 printf("Hostname:");
-                scanf("%s", hostname);
-                printf("%s\n", *(ipport+1));
-                telnet_client(3, ipport, procesador_implementado);
+                scanf("%s", hostname);//recibe el nombre de host. el puerto es el de por defecto de CasparCG
+                telnet_client(3, ipport, procesador_implementado); //carga los argumentos recolectados del doble puntero y corre la funcion con estos argumentos. tambien, pasa un puntero a funcion para controlar los comandos a enviar
                 return 0;
             }
             case '2':
             {
-                printf("Enter name of command file:");
+                printf("Enter name of command file:");//recibe el nombre del archivo donde se almacenarán los comandos
                 scanf("%s", hostname);
-                writeCommandsToFile(hostname);
+                writeCommandsToFile(hostname);//llama la funcion con el nombre de archivo
 
                 break;
             }

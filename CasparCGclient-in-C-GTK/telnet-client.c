@@ -146,7 +146,7 @@ static void _event_handler(telnet_t *telnet, telnet_event_t *ev,
 	}
 }
 
-int telnet_client(int argc, char **argv, int (*procesador)(char *)) {
+int telnet_client(int argc/*numero de argumentos en doble puntero*/, char **argv/*doble puntero*/, int (*procesador)(char *)/*puntero a funcion*/) {
     // definir funciones de lectura y escritura con variables puntero caracter
 	// int telnet_client(int argc, char **argv, char* command, void (*procesador)(char *))
 	char buffer[512];
@@ -237,7 +237,7 @@ int telnet_client(int argc, char **argv, int (*procesador)(char *)) {
 		if (pfd[0].revents & POLLIN) {
 
 			if ((rs = read(STDIN_FILENO, buffer, sizeof(buffer))) > 0) {
-                rs = procesador(buffer);
+                rs = procesador(buffer);//aqui se inyectan los comandos desde el menu
 				_input(buffer, rs);
 			} else if (rs == 0) {
 				break;

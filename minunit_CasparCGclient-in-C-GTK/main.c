@@ -12,6 +12,7 @@ char print[] = "print 1\r\n";
 char cls[] = "cls\r\n";
 char setlogo[] = "play 1-2 file\r\n";
 
+
 char validFilename[] = "1";
 char invalidFilename[] = "2";
 
@@ -26,7 +27,7 @@ MU_TEST(test_checkCommandFunctions) {
 	mu_assert_string_eq(printCommand("1"), print);
 	mu_assert_string_eq(clsCommand(), cls);
 	mu_assert_string_eq(setLogo("file"), setlogo);
-	mu_assert_string_eq(readCommandsFromFile(validFilename), "play 1-1 amb\r\n");
+    mu_assert_string_eq(clearCommand("1-1"), "clear 1-1\r\n");
     mu_assert_string_eq(readCommandsFromFile(invalidFilename), "0");
 
 
